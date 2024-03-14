@@ -13,4 +13,8 @@ class Character:
 class Type(Character): 
     """ A class that identifies types of playable characters """
     def __init__(self, name: str, level: int, skill_trees: [], weapon: str, has_weapon: bool):
-        
+        super().__init__(name, level, skill_trees, True)
+        self.weapon = weapon 
+        self.has_weapon = has_weapon
+
+        self.has_weapon = True
